@@ -1,0 +1,14 @@
+
+spring:
+  cloud:
+    function:
+      definition: ping;pong
+    stream:
+      bindings:
+        ping-in-0:
+          destination: messages
+        pong-out-0:
+          destination: messages        
+  rabbitmq:
+    username: rabbitmq
+    password: rabbitmq
